@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>this is title</title>
+</head>
+<body>
+<h1>
+    this is heading
+</h1>
+<form action="/removepunc" method="post">{% csrf_token %}
+    <textarea name="text">
+
+    </textarea>
+    <input type="radio" name="opt" value="rempunc"> remove punctiuation <br>
+    <input type="radio" name="opt" value="capitalize"> capitalize<br>
+    <button type="submit">submit</button>
+</form>
+</body>
+</html>
